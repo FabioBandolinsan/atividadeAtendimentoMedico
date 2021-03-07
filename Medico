@@ -1,0 +1,31 @@
+package atividadeAtendimentoMedico;
+
+public class Medico {
+	Paciente p =new Paciente();
+	Fila f = new Fila();
+	private String nome;
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		if(nome.length()>0)
+			this.nome = nome;
+	}
+
+	public void atendimento(Paciente paciente) {
+		f.removePaciente(paciente);
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Medico [nome=");
+		builder.append(nome);
+		builder.append("]");
+		return builder.toString();
+	}
+	
+	
+}
