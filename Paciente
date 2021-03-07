@@ -1,0 +1,20 @@
+package atividadeAtendimentoMedico;
+import java.util.ArrayList;
+public class Fila {
+	ArrayList<Paciente> lfila = new ArrayList<Paciente>();
+	
+	public void addPaciente(Paciente paciente) {
+		lfila.add(paciente);
+	}
+	
+	public void removePaciente(Paciente paciente) {
+		lfila.remove(1);
+		
+	}
+
+	public void addPaciente(String nomePaciente, String prioridadePaciente, String horaChegada,
+			String situacaoPaciente) {
+		
+	}
+	
+}
