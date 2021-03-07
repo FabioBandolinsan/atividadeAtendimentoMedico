@@ -1,0 +1,8 @@
+package atividadeAtendimentoMedico;
+
+public enum Enum {
+	EMERGENCIA,
+	URGENCIA,
+	POUCOURGENTE,
+	NAOURGENTE;
+}
